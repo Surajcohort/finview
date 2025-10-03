@@ -12,7 +12,7 @@ const sponsors = [
 ];
 
 
-const HeroSection = () => {
+const HeroSection2 = () => {
   return (
     <>
       <div className="baner">
@@ -65,4 +65,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSection2;
