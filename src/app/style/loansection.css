@@ -1,0 +1,48 @@
+.hero-img, .why-choose-us {
+  position: relative;
+  
+}
+
+.hero-img .arrow-image {
+  position: absolute;
+  top: -60px;
+  right: 44px;
+}
+.hero-img .Elelement-image{
+    position: absolute;
+   bottom: -71px;
+    left: -110px;
+}
+
+.hero__thumb .choose-img {
+  width: 100%;
+}
+
+.why-choose-us .choose_vector{
+    position: absolute;
+    right: -143px;
+    top: 13px;
+}
+
+.why-choose-us .elements{
+      position: absolute;
+    right: -145px;
+    bottom: 0;
+
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    row-gap: 16px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+.list li{
+        width: calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    gap: 12px;
+}

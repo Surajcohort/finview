@@ -1,0 +1,36 @@
+.working-section{
+    background: linear-gradient(135deg, #dde1e3 0%, #f5f7db 100%);
+}
+.icon-image{
+    position: relative;
+       width: 204px;
+    height: 175px;
+
+}
+.card-icon-image svg{
+        width: 112px;
+    height: 148px;
+}
+.card-icon-image .number-bullet{
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    font-weight: 500;
+        width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+ .card-title{
+        font-weight: 800;
+        margin-bottom: 28px;
+    font-size: 27px;
+    color: #222E48;
+    line-height: 1.2pc;
+    letter-spacing: inherit;
+ }
