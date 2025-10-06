@@ -1,0 +1,343 @@
+:root {
+  --calc-background-color: #074c3e;
+  --calc-select-color: ;
+  --calc-bg-light-color: #074c3e0d;
+  --calc-border-color: #dfe0e4;
+  --calc-graph-color: #074c3e;
+  --calc-graph-color-sub: #fcb650;
+  --calc-graph-border-color: ;
+  --calc-graph-border-color-sub: ;
+  --calc-graph-balance-border-color: #b8204c;
+  --calc-graph-balance-point-background-color: #b8204c;
+  --calc-graph-extra-payment-graph-color: #00636b;
+  --calc-summary-chart-principal-fill-color: #ed8c2b;
+  --calc-summary-chart-interest-fill-color: #88a825;
+  --calc-summary-chart-balloon-payment-fill-color: #25649f;
+  --calc-summary-chart-down-payment-fill-color: #b8204c;
+  --calc-summary-chart-extra-payment-fill-color: #cf4a30;
+}
+
+.mainWrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.printTable {
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--calc-background-color);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
+
+.printTable:hover {
+  opacity: 0.8;
+}
+
+.calculatorHeadingSection {
+  margin-bottom: 30px;
+}
+
+.calculatorChildHeading h2 {
+  background-color: var(--calc-background-color);
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  line-height: 2;
+  border-radius: 10px;
+}
+
+.loanOptionSection {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.customContainer {
+  margin-bottom: 30px;
+}
+
+.loanOptionBlock {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.firstRow,
+.secondRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.firstRowChild,
+.secondRowChild {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loanText {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.loanText i {
+  cursor: help;
+  color: #666;
+}
+
+.textTooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  white-space: normal;
+  max-width: 250px;
+  z-index: 10;
+  margin-top: 5px;
+}
+
+.loanText i:hover + .textTooltip {
+  display: block;
+}
+
+.loanTextDis {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.extraInfo {
+  position: absolute;
+  left: 12px;
+  color: #666;
+  font-weight: 600;
+}
+
+.loanTextDis input[type="number"] {
+  width: 100%;
+  padding: 10px 12px 10px 28px;
+  border: 1px solid var(--calc-border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.loanNumberPayment {
+  display: flex;
+  gap: 10px;
+}
+
+.paymentOptDrop {
+  padding: 10px 12px;
+  border: 1px solid var(--calc-border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.loanNumberPayment input[type="number"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--calc-border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    #555 0%,
+    var(--calc-background-color) 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--calc-background-color);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--calc-background-color);
+  cursor: pointer;
+  border: none;
+}
+
+.rateDisp {
+  font-weight: 600;
+  color: var(--calc-background-color);
+  min-width: 60px;
+  text-align: right;
+}
+
+.loanDetailSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 968px) {
+  .loanDetailSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loanDetailChild {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabContainer {
+  width: 100%;
+}
+
+.tabs {
+  width: 100%;
+}
+
+.tabButtons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--calc-border-color);
+}
+
+.tabButtons button {
+  padding: 12px 24px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.3s;
+  margin-bottom: -2px;
+}
+
+.tabButtons button:hover {
+  color: var(--calc-background-color);
+}
+
+.tabButtons button.active {
+  color: var(--calc-background-color);
+  border-bottom-color: var(--calc-background-color);
+}
+
+.tabContent {
+  padding: 20px 0;
+}
+
+.tabContent canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.loanTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.loanTable thead {
+  background-color: var(--calc-background-color);
+  color: white;
+}
+
+.loanTable th,
+.loanTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--calc-border-color);
+}
+
+.loanTable tbody tr:hover {
+  background-color: var(--calc-bg-light-color);
+}
+
+.loanTable th {
+  font-weight: 600;
+}
+
+.summaryWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loanCalDesc {
+  padding: 15px;
+  border-left: 4px solid var(--calc-background-color);
+  background-color: var(--calc-bg-light-color);
+  border-radius: 4px;
+}
+
+.loanCalDescHeading {
+  margin-bottom: 8px;
+}
+
+.loanCalDescHeading label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 600;
+}
+
+.loanCalDescVal {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--calc-background-color);
+}
+
+.loanCalDescVal small {
+  font-size: 14px;
+}
+
+.loanCalDescVal strong {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+@media print {
+  .headingSection {
+    display: none;
+  }
+
+  .tabButtons {
+    display: none;
+  }
+}
