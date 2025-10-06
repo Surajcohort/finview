@@ -1,4 +1,4 @@
-import "@/app/style/featuresection.css";
+import "@/style/featuresection.css";
 const FeatureSection = () => {
   return (
     <>
