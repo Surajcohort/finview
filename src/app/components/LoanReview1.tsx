@@ -1,4 +1,4 @@
-import "@/app/style/loanreview1.css";
+import "@/style/loanreview1.css";
 const LoanReview1 = () => {
   return (
     <section className="loan-reviews section">

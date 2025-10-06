@@ -1,4 +1,4 @@
-import "@/app/style/workingprocess.css";
+import "@/style/workingprocess.css";
 const WorkingProcess = () => {
   return (
     <>

@@ -1,4 +1,4 @@
-import "@/app/style/loancalculator.css";
+import "@/style/loancalculator.css";
 const LoanCalculators = () => {
   return (
     <>
