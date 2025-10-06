@@ -1,0 +1,24 @@
+.loan-solution {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+.loan-solution::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--theme-secondary-bg);
+  border-radius: 16px;
+  opacity: 0.1000000015;
+  z-index: -1;
+}
+
+.loan-solution .loan-solution__thumb {
+  position: absolute;
+  top: -55px;
+}
