@@ -1,0 +1,9 @@
+.loan-review{
+    padding-top: 66px;
+    padding-bottom: 50px;
+    background: linear-gradient(135deg, #dde1e3 0%, #dfe0d4 100%);
+}
+.star_review .star{
+width: 20px;
+height: 30px;
+}

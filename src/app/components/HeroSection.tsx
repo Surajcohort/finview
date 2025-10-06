@@ -1,4 +1,4 @@
-import "@/app/style/herosection.css";
+import "@/style/herosection.css";
 const HeroSection = () => {
   return (
     <>
