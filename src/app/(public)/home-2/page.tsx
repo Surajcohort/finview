@@ -1,3 +1,4 @@
+import AboutUsSection from "@/app/components/About-Us-Section";
 import FeatureSection from "@/app/components/FeatureSection";
 import HeroSection from "@/app/components/HeroSection";
 import LoanCalculators from "@/app/components/LoanCalculator";
@@ -14,6 +15,7 @@ const Home2 = () => {
         <LoanSection/>
         <LoanReview1/>
         <WorkingProcess/>
+        <AboutUsSection/>
         <LoanCalculators/>
         </>
      );
