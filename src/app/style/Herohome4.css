@@ -1,0 +1,136 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 80px 60px; */
+  background-image: url(https://pixelaxis.net/finview/wp-content/uploads/2025/02/Hero-7.webp);
+  color: white;
+  padding-left: 7rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1;
+  padding-left: 0;
+}
+
+.hero-subtitle {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+.hero-subtitle .highlight {
+  color: #f39000;  
+  font-weight: bold;  
+}
+
+.loan-types {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.loan-button {
+  background-color: #00b140;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.loan-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 22rem;
+}
+
+.hero-illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* LoanTypeSelector.css */
+.loan-type-selector {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #f1f5f8;
+  border-radius: 1rem;
+}
+
+.loan-type-selector h2 {
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  /* margin-bottom: 3px; */
+  color: #333;
+  text-align: left;
+  /* padding-bottom: 3px; */
+}
+
+.loan-types {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.loan-type-button {
+  background-color: #ffffff;
+  border: 2px solid #e3e9f1;
+  border-radius: 0.5rem;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loan-type-button:hover {
+  transform: scale(1.05); 
+  border-color: #00b140;
+  background-color: #f1fdf0; 
+}
+
+.loan-icon {
+  width: 50px;  /* Adjust the width of the images */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.loan-type-button span {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loan-types {
+    flex-direction: column;
+    align-items: center;
+  }
+  .loan-type-button {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+
