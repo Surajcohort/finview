@@ -1,0 +1,118 @@
+.loan-section {
+  /* Elementor background */
+  background-color: #002922;
+  background-image: url("https://pixelaxis.net/finview/wp-content/uploads/2025/02/How-Its-Works.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 100px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.loan-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loan-subHeading {
+  color: #fcb900;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.loan-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.loan-description {
+  max-width: 700px;
+  margin: 0 auto 60px;
+  font-size: 15px;
+  color: #d6d6d6;
+  line-height: 1.6;
+}
+
+.loan-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.loan-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  text-align: left;
+}
+
+.loan-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  max-width: 300px;
+  position: relative;
+}
+
+.loan-icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fcb900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fcb900;
+  font-size: 20px;
+  flex-shrink: 0;
+  background: #002922;
+  position: relative;
+  z-index: 2;
+}
+
+.loan-step h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.loan-step p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+.loan-centerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loan-image {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  width: 280px;
+}
+
+/* ✅ Connector lines */
+.loan-step::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  width: 80px;
+  height: 2px;
+  background-color: #fcb900;
+}
+
+.loan-steps.right .loan-step::after {
+  left: auto;
+  right: 50px;
+}

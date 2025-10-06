@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import "@/app/style/LoanStyle.css"; // Make sure this path is correct
+import "@/app/style/LoanStyle.css"; 
 
 export default function LoanCalculator() {
   const [amount, setAmount] = useState(1000);
@@ -39,7 +39,6 @@ export default function LoanCalculator() {
   return (
     <div className="container">
       <div className="loanCardContainer">
-
         {/* Sliders side by side */}
         <div className="sliderRow">
           <div className="sliderContainer">
@@ -107,7 +106,10 @@ export default function LoanCalculator() {
             <div className="bestInterestTag">THE BEST INTEREST</div>
             <div className="loanCardGrid">
               <div className="bankInfo">
-                <img src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo2.png" alt="Lendo"/>
+                <img
+                  src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo2.png"
+                  alt="Lendo"
+                />
                 <span className="bankName">PNC</span>
                 <div className="stars">
                   {[...Array(5)].map((_, i) => (
@@ -124,9 +126,8 @@ export default function LoanCalculator() {
                 <p className="amount">$42.58</p>
                 <p>/ Month</p>
                 <p className="exampleText">
-                  Example: Nominal interest rate 11.39%, effective interest
-                  rate 12.71%, NOK 150,000, up to 5 years, cost 49,237. Total
-                  199,237
+                  Example: Nominal interest rate 11.39%, effective interest rate
+                  12.71%, NOK 150,000, up to 5 years, cost 49,237. Total 199,237
                 </p>
               </div>
 
@@ -157,7 +158,10 @@ export default function LoanCalculator() {
             <div className="favoriteTag">PEOPLE'S FAVORITE</div>
             <div className="loanCardGrid">
               <div className="bankInfo">
-                <img src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo6.png" alt="Ya Bank"/>
+                <img
+                  src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo6.png"
+                  alt="Ya Bank"
+                />
                 <span className="bankName">ICICI Bank</span>
                 <div className="stars">
                   {[...Array(4)].map((_, i) => (
@@ -210,7 +214,10 @@ export default function LoanCalculator() {
             <div className="bestInterestTag">THE BEST INTEREST</div>
             <div className="loanCardGrid">
               <div className="bankInfo">
-                <img src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo5.png" alt="Opp Finans"/>
+                <img
+                  src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo5.png"
+                  alt="Opp Finans"
+                />
                 <span className="bankName">mandiri</span>
                 <div className="stars">
                   {[...Array(3)].map((_, i) => (
@@ -230,8 +237,8 @@ export default function LoanCalculator() {
                 <p className="amount">$44.58</p>
                 <p>/ Month</p>
                 <p className="exampleText">
-                  Example: effective interest 28.79%, NOK 40,000, up to 5
-                  years, cost NOK 31,208, total NOK 71,208.
+                  Example: effective interest 28.79%, NOK 40,000, up to 5 years,
+                  cost NOK 31,208, total NOK 71,208.
                 </p>
               </div>
 
@@ -257,8 +264,120 @@ export default function LoanCalculator() {
               </div>
             </div>
           </div>
+          <div className="loanCard">
+            <div className="bestInterestTag">PEOPLE'S FAVOURITE</div>
+            <div className="loanCardGrid">
+              <div className="bankInfo">
+                <img
+                  src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/equipment_loan.png"
+                  alt="Santander"
+                />{" "}
+                <span className="bankName">Santander</span>
+                <div className="stars">
+                  {[...Array(3)].map((_, i) => (
+                    <svg key={i} className="starIcon" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                  <svg className="starIcon" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                </div>
+                <p className="reviews">25K+ Reviews</p>
+              </div>
+
+              <div className="monthlyPayment">
+                <p>From</p>
+                <p className="amount">$43.97</p>
+                <p>/ Month</p>
+                <p className="exampleText">
+                  Representative example: effective interest 28.79%, NOK 40,000,
+                  up to 5 years, cost NOK 31,208.
+                </p>
+              </div>
+
+              <div className="loanDetails">
+                <div className="detailItem">
+                  <p>Effective Interest</p>
+                  <p>2.76%-3.15%</p>
+                </div>
+                <div className="detailItem">
+                  <p>Repayment Period</p>
+                  <p>1 - 24 Years</p>
+                </div>
+                <div className="detailItem">
+                  <p>Total Cost</p>
+                  <p>$1055.00</p>
+                </div>
+              </div>
+
+              <div className="actions">
+                <p>· Terms & Conditions Apply</p>
+                <button className="applyButton">Apply Now</button>
+                <button className="readMoreButton">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div className="loanCard">
+            <div className="bestInterestTag">SECURITY IN HOUSING</div>
+            <div className="loanCardGrid">
+              <div className="bankInfo">
+                <img
+                  src="https://softivuslab.com/wp/finview/wp-content/uploads/2024/03/loan_reviews_logo.png"
+                  alt="Instabank"
+                />{" "}
+                <span className="bankName">Bedrock</span>
+                <div className="stars">
+                  {[...Array(3)].map((_, i) => (
+                    <svg key={i} className="starIcon" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                  <svg className="starIcon" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                </div>
+                <p className="reviews">25K+ Reviews</p>
+              </div>
+
+              <div className="monthlyPayment">
+                <p>From</p>
+                <p className="amount">$45.17</p>
+                <p>/ Month</p>
+                <p className="exampleText">
+                  Example: Annuity loan NOK 150,000, 5 years, nom. interest rate
+                  7.00%, establishment/term deposit NOK 0 gives an effective
+                  interest rate of 7.23%.
+                </p>
+              </div>
+
+              <div className="loanDetails">
+                <div className="detailItem">
+                  <p>Effective Interest</p>
+                  <p>4.2%-7%</p>
+                </div>
+                <div className="detailItem">
+                  <p>Repayment Period</p>
+                  <p>7 - 30 Years</p>
+                </div>
+                <div className="detailItem">
+                  <p>Total Cost</p>
+                  <p>$1084.00</p>
+                </div>
+              </div>
+
+              <div className="actions">
+                <p>· Terms & Conditions Apply</p>
+                <button className="applyButton">Apply Now</button>
+                <button className="readMoreButton">Read More</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <a href="#" className="btn_theme btn_alt">
+        See All Review Loan<i className="bi bi-arrow-up-right"></i>
+      </a>
     </div>
   );
 }
