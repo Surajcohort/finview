@@ -1,0 +1,66 @@
+ .loan-card {
+     position: relative;
+     overflow: hidden;
+     border-radius: 8px;
+     background: #ffffff;
+     transition: all 0.4s ease;
+ }
+
+ .loan-icon {
+     background: #074c3e;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     left: 50%;
+     bottom: 0;
+     transform: translateX(-50%);
+     visibility: hidden;
+     opacity: 0;
+     transition: all 0.5s ease;
+ }
+
+ .loan-icon i {
+     font-size: 18px;
+     color: #fff;
+ }
+
+ .loan-card:hover {
+     background: #FCB650;
+
+ }
+
+ .loan-card:hover .loan-icon {
+     visibility: visible;
+     opacity: 1;
+     bottom: 16px;
+ }
+
+ .loan-card:hover img {
+     display: none;
+     visibility: hidden;
+
+ }
+
+ .loan-card h4 {
+     font-size: 20px;
+     margin-top: 12px;
+     color: #222;
+
+     position: relative;
+     left: 50%;
+     bottom: 0;
+     transform: translateX(-50%);
+     opacity: 1;
+     transition: bottom 0.5s ease, opacity 0.5s ease, color 0.5s ease;
+ }
+
+ .loan-card:hover h4 {
+     bottom: 50px;
+     opacity: 1;
+     color: #fff;
+ }
+

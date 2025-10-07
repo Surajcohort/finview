@@ -1,0 +1,58 @@
+.btn_theme {
+  width: -moz-max-content;
+  width: max-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #074c3e;
+  text-transform: capitalize;
+  font-size: 16px;
+  padding: 16px 32px;
+  border: 1px solid transparent;
+  border-radius: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.btn_theme i,
+.btn_theme span {
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  color: var(--white);
+}
+
+.btn_theme:hover {
+  color: #074c3e !important;
+  background-color: #ffffff;
+  border: 1px solid #074c3e;
+}
+
+.btn_theme:hover .bi-arrow-up-right {
+  color: #074c3e !important;
+  background-color: #ffffff;
+}
+
+.btn_theme:after {
+  content: "";
+  position: absolute;
+  top: 25;
+  right: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.btn_theme:hover:after {
+  width: 255%;
+  height: 200px;
+}

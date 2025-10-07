@@ -1,0 +1,64 @@
+/* AppDownloadSection styles */
+
+.app-download-section {
+  background-color: #1a4d3d;
+  min-height: 100vh;
+  border-radius: 10px;
+}
+
+.app-download-section .content-container {
+  padding-top: 2rem;
+ 
+}
+
+.app-download-section .title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.app-download-section .description {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+
+.app-download-section .stats h5 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.app-download-section .stats h2 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.app-download-section .stats h2 span {
+  color: #f39c12;
+}
+
+.app-download-section .features span.check {
+  color: #f39c12;
+  font-size: 1.5rem;
+}
+
+.app-download-section .features span.text {
+  color: #ffffff;
+  margin-left: 0.5rem;
+}
+
+.app-download-section .download-buttons a.btn {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.app-download-section .download-buttons a.btn small {
+  font-size: 0.7rem;
+}
+
+.app-download-section .download-buttons a.btn strong {
+  display: block;
+}
