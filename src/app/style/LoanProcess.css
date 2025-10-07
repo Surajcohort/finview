@@ -1,7 +1,7 @@
 .loan-section {
   /* Elementor background */
   background-color: #002922;
-  background-image: url("https://pixelaxis.net/finview/wp-content/uploads/2025/02/How-Its-Works.webp");
+  /* background-image: url("https://pixelaxis.net/finview/wp-content/uploads/2025/02/How-Its-Works.webp"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,10 @@
   text-align: center;
 }
 
-.loan-container {
+.loan-container11 {
+  background-image: url("https://pixelaxis.net/finview/wp-content/uploads/2025/02/How-Its-Works.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -27,6 +30,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 12px;
+  color: #fff;
 }
 
 .loan-description {

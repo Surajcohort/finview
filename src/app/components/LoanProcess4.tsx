@@ -1,11 +1,10 @@
 import React from "react";
-import Image from "next/image"; // if using Next.js
 import "@/app/style/LoanProcess.css"; // import the external css
 
 const LoanProcess = () => {
   return (
     <section className="loan-section">
-      <div className="loan-container">
+      <div className="loan-container11">
         <p className="loan-subHeading">⚡ Our Working Process</p>
         <h2 className="loan-heading">
           Simplified Steps to Find Your Ideal Loan
