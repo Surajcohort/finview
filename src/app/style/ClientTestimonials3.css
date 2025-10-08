@@ -1,0 +1,31 @@
+.testimonials  {
+  background-color: #f9fafb;
+  padding : 120px 0;
+  
+}
+
+.btn-outline-success {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #074c3e;
+}
+.btn-outline-success:hover .bi-chevron-right ,.btn-outline-success:hover .bi-chevron-left{
+  color: #fff;
+}
+
+
+.bi-star-fill {
+  color: #fcb650;
+}
+
+h2, h2>a {
+    font-weight: 600;
+    font-size: 40px;
+}

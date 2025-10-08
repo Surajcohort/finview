@@ -8,7 +8,7 @@
 
 .app-download-section .content-container {
   padding-top: 2rem;
- 
+
 }
 
 .app-download-section .title {
@@ -22,6 +22,7 @@
   font-size: 1.1rem;
   color: #ffffff;
   margin-bottom: 3rem;
+  
 }
 
 .app-download-section .stats h5 {
@@ -29,15 +30,7 @@
   margin-bottom: 1rem;
 }
 
-.app-download-section .stats h2 {
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 0;
-}
 
-.app-download-section .stats h2 span {
-  color: #f39c12;
-}
 
 .app-download-section .features span.check {
   color: #f39c12;
@@ -61,4 +54,22 @@
 
 .app-download-section .download-buttons a.btn strong {
   display: block;
+}
+
+
+
+.app-download-section .stats .countdown__title span {
+  color: #f39c12;
+}
+.countdown__title {
+ color: #ffffff;
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.display-4 {
+  font-size: 56px;
 }
